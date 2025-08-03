@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <meta name="description" content="Around The US" />
+    <meta name="author" content="Irving Sanchez" />
+    <meta name="keywords" content="social media, html, css, js, adaptive" />
+    <title>Alrededor De Los EE.UU.</title>
+    <link rel="stylesheet" href="./pages/index.css" />
+  </head>
+  <body>
+    <div class="page"></div>
+    <header class="header">
+      <img
+        src="./images/header-logo.svg"
+        alt="page-logo"
+        class="header__image"
+      />
+    </header>
+    <main class="main">
+      <div class="main__profile">
+        <img
+          class="main__content-image"
+          src="images/Avatar.png"
+          alt="Jacques Cousteau"
+        />
+        <div class="main__profile_info">
+          <div class="main__profile_details">
+            <h1 class="main__profile_name">Jacques Cousteau</h1>
+            <button class="edit-button" id="edit-button">
+              <img
+                class="button__image"
+                src="images/edit-button.svg"
+                alt="Editar datos"
+              />
+            </button>
+          </div>
+          <p class="main__profile_about">Explorador</p>
+        </div>
+        <button class="add-button" id="add-card">
+          <img
+            class="add-button__image"
+            src="images/add-button.svg"
+            alt="Agregar tarjeta"
+          />
+        </button>
+      </div>
+      <div class="main__gallery">
+        <div class="main__gallery-card">
+          <img
+            src="./images/yosemite.jpg"
+            alt="valle-yosemite"
+            class="main__gallery-image"
+          />
+          <div class="main__gallery-content">
+            <p class="main__gallery-paragraph">Valle de Yosemite</p>
+            <button type="button" class="main__button main__button_like">
+              <img
+                src="./images/like-button.svg"
+                alt="like"
+                class="main__gallery-like"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="main__gallery-card">
+          <img
+            src="./images/louise.png"
+            alt="lago-louise"
+            class="main__gallery-image"
+          />
+          <div class="main__gallery-content">
+            <p class="main__gallery-paragraph">Lago Louise</p>
+            <button type="button" class="main__button main__button_like">
+              <img
+                src="./images/like-button.svg"
+                alt="like"
+                class="main__gallery-like"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="main__gallery-card">
+          <img
+            src="./images/calvas.png"
+            alt="montañas-calvas"
+            class="main__gallery-image"
+          />
+          <div class="main__gallery-content">
+            <p class="main__gallery-paragraph">Montañas Calvas</p>
+            <button type="button" class="main__button main__button_like">
+              <img
+                src="./images/like-button.svg"
+                alt="like"
+                class="main__gallery-like"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="main__gallery-card">
+          <img
+            src="./images/latemar.png"
+            alt="latemar"
+            class="main__gallery-image"
+          />
+          <div class="main__gallery-content">
+            <p class="main__gallery-paragraph">Latemar</p>
+            <button type="button" class="main__button main__button_like">
+              <img
+                src="./images/like-button.svg"
+                alt="like"
+                class="main__gallery-like"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="main__gallery-card">
+          <img
+            src="./images/vanois.png"
+            alt="vanois-national-park"
+            class="main__gallery-image"
+          />
+          <div class="main__gallery-content">
+            <p
+              class="main__gallery-paragraph main__gallery-paragraph_text_overflow"
+            >
+              Vanois National Park
+            </p>
+            <button type="button" class="main__button main__button_like">
+              <img
+                src="./images/like-button.svg"
+                alt="like"
+                class="main__gallery-like"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="main__gallery-card">
+          <img
+            src="./images/braises.png"
+            alt="lago-braies"
+            class="main__gallery-image"
+          />
+          <div class="main__gallery-content">
+            <p class="main__gallery-paragraph">Lago di Braies</p>
+            <button type="button" class="main__button main__button_like">
+              <img
+                src="./images/like-button.svg"
+                alt="like"
+                class="main__gallery-like"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p class="footer__copyright">&#x00a9; 2024 Around The U.S.</p>
+    </footer>
+    <div class="popup">
+      <button type="button" class="popup__button popup__button_close">
+        &#x1F7A9;
+      </button>
+      <form action="" class="popup__container">
+        <h2 class="popup__subtitle">Editar perfil</h2>
+        <fieldset class="popup__content">
+          <input
+            type="text"
+            class="popup__input popup__input_name"
+            placeholder="Nombre"
+          />
+          <input
+            type="text"
+            class="popup__input popup__input_about"
+            placeholder="Acerca de mi"
+          />
+        </fieldset>
+        <fieldset class="popup__content">
+          <button type="submit" class="popup__button popup__button_save">
+            Guardar
+          </button>
+        </fieldset>
+      </form>
+    </div>
+    <script src="./script/script.js"></script>
+  </body>
+</html>
