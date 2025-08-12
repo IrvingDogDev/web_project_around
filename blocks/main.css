@@ -1,113 +1,64 @@
-.main {
-  max-width: 880px;
-  margin: auto;
-}
-
 .main__profile {
-  display: flex;
   max-width: 880px;
+  display: flex;
   margin: auto;
+  padding-top: 40px;
 }
 
-.main__content-image {
-  display: flex;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  margin: 40px 30px 50px 0;
+.main__profile-image {
+  max-width: 120px;
+  max-height: 120px;
+  padding-right: 30px;
 }
 
 .main__profile_info {
-  padding: 0;
-  width: 415px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-}
-
-.main__profile_details {
-  display: flex;
+  color: #ffffff;
+  padding-right: 18px;
+  font-family: "Inter-Regular", sans-serif;
 }
 
 .main__profile_name {
-  max-width: 430px;
-  height: 45px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  display: inline-block;
-  font-family: "Inter-Regular", sans-serif;
   font-size: 42px;
-  font-weight: 500;
-  line-height: 48px;
-  text-align: left;
-  color: rgba(255, 255, 255, 1);
-  margin: 62px auto 16px 0;
-}
-
-.edit-button {
-  display: flex;
-  width: 24px;
-  height: 24px;
-  border: 1px white solid;
-  margin: 77px auto auto 18px;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.button:hover {
-  opacity: 0.6;
-}
-
-.button__image {
-  margin: auto;
-  width: 10px;
-  height: 10px;
+  margin-bottom: 16px;
 }
 
 .main__profile_about {
-  max-width: 415px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  height: 22px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  color: #ffffff;
   margin-top: 0;
+  margin-bottom: 71px;
+  font-size: 18px;
 }
 
-.add-button {
-  display: flex;
-  max-width: 150px;
-  width: 100%;
-  background-color: transparent;
-  border: 2px white solid;
-  margin: 75px 0 85px auto;
+.edit_button {
+  margin: 44px 165px auto 0;
+  max-width: 24px;
+  height: 24px;
+  background: none;
+  justify-content: center;
+  border: 2px inset;
   cursor: pointer;
 }
 
-.add-button__image {
-  display: flex;
-  align-self: center;
-  margin: auto;
-  width: 22px;
-  height: 22px;
-  color: #ffffff;
+.add_button {
+  width: 150px;
+  height: 50px;
+  background: none;
+  justify-content: end;
+  margin-top: 44px;
+  border: 2px inset;
+  cursor: pointer;
 }
 
 .main__gallery {
   max-width: 880px;
   display: flex;
   flex-wrap: wrap;
-  row-gap: 20px;
-  column-gap: 17px;
+  gap: 20px 17px;
+  margin: 0 auto;
 }
 
-.main__gallery-card {
+.main__gallery_card {
   position: relative;
   max-width: 282px;
   background-color: #fff;
@@ -115,26 +66,23 @@
   border-radius: 10px;
 }
 
-.main__gallery-image {
+.main__gallery_image {
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
-.main__gallery-content {
+.main__gallery_content {
   display: flex;
   justify-content: space-between;
   max-width: 250px;
   margin: 20px auto;
 }
 
-.main__gallery-paragraph {
+.main__gallery_paragraph {
   font-family: "Inter-Black", sans-serif;
   font-size: 24px;
   margin: 0;
-}
-
-.main__gallery-paragraph_text_overflow {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -144,91 +92,26 @@
   border: none;
   height: 19px;
   align-self: flex-end;
+  background: none;
+  width: 21px;
+  height: 19px;
 }
 
-.main__button_like_active {
-  background-image: url(../images/Vector-like-active.svg);
-}
-
-@media screen and (min-width: 320px) and (max-width: 584px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .main__profile {
-    max-width: 290px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 120px repeat(2, 50px);
-    justify-items: center;
-    margin: auto;
-    grid-row-gap: 30px;
-    padding-bottom: 30px;
-  }
-
-  .main__content-paragraph {
-    grid-column: 1 / 2;
-    grid-row: 2;
-    grid-template-rows: repeat(2, 20px);
-  }
-
-  .main__paragraph_name {
-    font-size: 22px;
-    padding: 0;
-    line-height: normal;
-  }
-
-  .main__paragraph_about {
-    padding: 0;
-    font-size: 14px;
-  }
-
-  .main__button_edit {
-    width: 22px;
-    height: 22px;
-    margin: 0 0 0 16px;
-    align-self: center;
-  }
-
-  .main__button_add {
-    width: 100%;
-    grid-row: 3;
+    max-width: 282px;
   }
 
   .main__gallery {
-    max-width: 290px;
-    margin: auto;
-    gap: 20px;
-    justify-items: center;
+    max-width: 282px;
   }
 }
 
-@media screen and (min-width: 585px) and (max-width: 880px) {
+@media screen and (min-width: 769px) and (max-width: 880px) {
   .main__profile {
-    max-width: 700px;
-    margin: auto;
-    padding-bottom: 40px;
-  }
-
-  .main__paragraph_name {
-    font-size: 30px;
-    line-height: normal;
-  }
-
-  .main__paragraph_about {
-    font-size: 14px;
-  }
-
-  .main__button_edit {
-    width: 22px;
-    height: 22px;
-    margin: 0 0 0 16px;
-    align-self: center;
-  }
-
-  .main__button_add {
-    width: 100%;
   }
 
   .main__gallery {
-    max-width: 600px;
-    margin: auto;
-    gap: 20px;
-    justify-items: center;
+    max-width: 720px;
   }
 }
