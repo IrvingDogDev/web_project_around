@@ -72,3 +72,31 @@
   margin-bottom: 40px;
   font-family: "Inter-Regular", sans-serif;
 }
+
+@media (max-width: 768px) {
+  .popup__button_close {
+    position: absolute;
+    font-size: 40px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    right: 290px;
+    top: 120px;
+  }
+
+  .popup__container {
+    width: 282px;
+  }
+
+  .popup__subtitle {
+    font-size: 18px;
+  }
+
+  .popup__content {
+    max-width: 238px;
+  }
+
+  .popup__input {
+    max-width: 238px;
+    font-size: 14px;
+  }
+}
