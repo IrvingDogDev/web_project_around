@@ -11,7 +11,7 @@
   padding-right: 30px;
 }
 
-.main__profile_info {
+.main__profile-info {
   display: flex;
   flex-direction: column;
   color: #ffffff;
@@ -20,23 +20,23 @@
   width: 100%;
 }
 
-.main__profile_details {
+.main__profile-details {
   display: flex;
   gap: 18px;
   align-items: center;
 }
 
-.main__profile_name {
+.main__profile-name {
   font-size: 42px;
   margin-bottom: 16px;
 }
 
-.main__profile_about {
+.main__profile-about {
   margin-top: 0;
   font-size: 18px;
 }
 
-.edit_button {
+.main__button-edit {
   max-width: 24px;
   height: 24px;
   background: none;
@@ -45,7 +45,7 @@
   cursor: pointer;
 }
 
-.add_button {
+.main__button-add {
   min-width: 150px;
   height: 50px;
   background: none;
@@ -63,7 +63,7 @@
   margin: 0 auto;
 }
 
-.main__gallery_card {
+.main__gallery-card {
   position: relative;
   max-width: 282px;
   background-color: #fff;
@@ -71,20 +71,20 @@
   border-radius: 10px;
 }
 
-.main__gallery_image {
+.main__gallery-image {
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
-.main__gallery_content {
+.main__gallery-content {
   display: flex;
   justify-content: space-between;
   max-width: 250px;
   margin: 20px auto;
 }
 
-.main__gallery_paragraph {
+.main__gallery-paragraph {
   font-family: "Inter-Black", sans-serif;
   font-size: 24px;
   margin: 0;
@@ -93,7 +93,7 @@
   overflow: hidden;
 }
 
-.main__button_like {
+.main__button-like {
   border: none;
   height: 19px;
   align-self: flex-end;
@@ -115,15 +115,15 @@
     padding: 0;
   }
 
-  .main__profile_info {
+  .main__profile-info {
     width: 282px;
   }
 
-  .main__profile_details {
+  .main__profile-details {
     gap: 10px;
   }
 
-  .add_button {
+  .main__button-add {
     margin-top: 18px;
     width: 282px;
   }
@@ -146,17 +146,17 @@
     padding: 0;
   }
 
-  .main__profile_info {
+  .main__profile-info {
     width: 282px;
     padding: 0;
     align-items: center;
   }
 
-  .main__profile_details {
+  .main__profile-details {
     gap: 10px;
   }
 
-  .main__profile_name {
+  .main__profile-name {
     font-size: 22px;
   }
 

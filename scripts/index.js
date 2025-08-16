@@ -3,9 +3,9 @@ let butClose = document.querySelector(".popup__button_close");
 let form = document.querySelector(".popup__container");
 let inpName = document.querySelector(".popup__input_name");
 let inpAbout = document.querySelector(".popup__input_about");
-let butEdit = document.querySelector(".edit_button");
-let inName = document.querySelector(".main__profile_name");
-let inAbout = document.querySelector(".main__profile_about");
+let butEdit = document.querySelector(".main__button-edit");
+let inName = document.querySelector(".main__profile-name");
+let inAbout = document.querySelector(".main__profile-about");
 
 function openEdit() {
   inpName.value = inName.textContent;

@@ -31,11 +31,12 @@
   font-size: 40px;
   border: none;
   background-color: rgba(0, 0, 0, 0);
-  right: 190px;
-  top: 130px;
+  right: -40px;
+  top: -35px;
 }
 
 .popup__container {
+  position: relative;
   margin: auto;
   max-width: 430px;
   background-color: #fff;
@@ -79,8 +80,8 @@
     font-size: 40px;
     border: none;
     background-color: rgba(0, 0, 0, 0);
-    right: 290px;
-    top: 120px;
+    right: -10px;
+    top: -50px;
   }
 
   .popup__container {
