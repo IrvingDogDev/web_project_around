@@ -74,6 +74,11 @@
   font-family: "Inter-Regular", sans-serif;
 }
 
+.popup__button_image {
+  height: 40px;
+  width: 40px;
+}
+
 @media (max-width: 768px) {
   .popup__button_close {
     position: absolute;
@@ -99,5 +104,10 @@
   .popup__input {
     max-width: 238px;
     font-size: 14px;
+  }
+
+  .popup__button_image {
+    height: 26px;
+    width: 26px;
   }
 }
